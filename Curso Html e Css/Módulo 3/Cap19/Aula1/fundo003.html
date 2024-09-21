@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalização de Fundos</title>
+    <title>Posição dos Fundos</title>
     <style>
-        body{
-            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+        div.bloco {
+            background-image: url(imagens/wallpaper003.jpg);
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
 
-            background-size: 100px;
-            background-repeat: repeat-x;
-            
-            /*
-            Background-repeat recebe como parâmetros:
-            
-            --'repeat': Deixa normalmente. 
-            --"no-repeat": Deixa apenas uma imagem na tela.
-            --'repeat-x': Repete as imagens em um eixo horizontal.
-            --'repeat-y': Repete as iamgens em um eixo vertical.
+        div#q1 {
+            background-position: left top;
 
-            */
+        }
 
-            
+        div#q2 {
+            background-position: left center;
+        }
+
+        div#q3 {
+            background-position: right bottom;
+        }
+
+        div#q4 {
+            background-position: center center;
         }
     </style>
 </head>
 <body>
-    <h1>Teste de Aplicação de Fundo</h1>
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+
+    </div>
+    <div class="bloco" id="q3">
+
+    </div>
+    <div class="bloco" id="q4
+    ">
+
+    </div>
 </body>
 </html>
