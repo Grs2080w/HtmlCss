@@ -212,10 +212,25 @@
         }
 
         /* Centralizar footer e por verde escuro */
-        footer > p {
-            text-align: center;
-            background-color: rgb(27, 54, 40);
-            color: white;
-            padding: 20px;
-            margin: 0px;
+
+        footer {
+           background-color: rgb(27, 54, 40);
         }
+
+        footer img {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        
+        /* footer > p{
+            color: white;
+            right: auto;
+            text-indent: initial;
+            text-align: center;
+            white-space: nowrap;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: initial;
+            
+        }*/
