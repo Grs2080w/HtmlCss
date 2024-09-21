@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(14, 2, 34);
+            margin: 0px;
+            margin: auto;
+            max-width: 1800px;
+
+        }
+
+        header {
+            background-color: white ;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;  
+        }
+
+        article {
+            background-color: rgb(208, 204, 204);
+            padding: 1%;
+            margin-bottom: 40px;
+
+        }
+
+        section > article > aside > p{
+            background-color: rgb(192, 191, 191);
+            padding: 7px;
+            border-radius: 5px;  
+    
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+
+        }
+
+        nav{
+            background-color: rgb(68, 68, 68);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 5px 6px 16px 2px #000000b3;
+            border-radius: 10px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .assuntos{
+            margin: 0.5px;
+            display: inline;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            border-radius: 10px;   
+        }
+
+        .assuntos > article > p {
+               display: inline;  
+
+        }
+
+        #noticias:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #celebridades:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #esportes:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #politica:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #tecnologia:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        #noticias1 {
+            box-shadow: 5px 6px 16px 2px #000000b3;
+            border-radius: 8px;  
+        }
+
+        #noticias2 {
+            box-shadow: 5px 6px 16px 2px #000000b3;
+            border-radius: 8px;  
+        }
+
+    </style>
+</head>
+<body>
+   <header> 
+    <h1>Gabriel News</h1>
+    <nav class="cabeçalho">
+        <a href="">Link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </nav>
+   </header>
+
+
+   <main>
+
+        <section class="assuntos" >
+    <article>
+
+        <p><a href="pag_esportes" id="esportes">Esportes</a></p>
+        <p><a  href="pag_politica.html" id="politica">Política</a></p> 
+        <p><a  href="pag_tecnologia.html" id="tecnologia">Tecnologia</a></p>
+        <p><a  href="pag_noticia.html" id="noticias" style="color: black;">Notícias</a></p>
+        <p><a  href="pag_celebridades.html" id="celebridades">Celebridades</a></p>
+
+    </article>
+        </section>
+
+
+        <section class="noticias">
+            <article id="noticias1">
+
+                <h2>Noticías sobre o Brasil</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos at aut consectetur aliquid explicabo voluptas voluptatum. Pariatur eos, qui incidunt magni nisi, laboriosam hic iure, harum quidem ut nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam et nisi itaque. Perspiciatis eius animi suscipit, aliquam nam veritatis soluta enim illum, hic eligendi sapiente, optio laudantium quos et fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos provident quaerat eveniet eos id! Nesciunt commodi vel eaque ipsa sit error nemo minima, accusantium est nulla totam, laborum quos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nemo laudantium quaerat, doloremque aperiam unde fuga laborum recusandae necessitatibus, quae, aspernatur ipsa vero non a! Odit cupiditate ad asperiores excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit repellendus dolorem quae voluptatum dolor beatae animi facere exercitationem, doloremque id officia ut minima magni officiis iusto aliquid facilis quia sapiente?</p>
+
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+
+
+            <article id="noticias2">
+
+                <h2>Noticías sobre a Espanha</h2>
+
+                <p>Lorem ipsum dolor sit amet  consectetur adipisicing elit. Ipsum, accusamus? Quis quia alias tempora  in, omnis magnam, unde excepturi a   autem sunt veritatis deserunt pariatur perspiciatis officia magni expedita deleniti. Lorem ipsum dolor    sit amet consectetur adipisicing   elit. Doloribus reiciendis soluta sunt facilis dolorum, non molestiae optio voluptates illo omnis corrupti    libero expedita, ullam iure    doloremque placeat odio iusto. Expedita! Lorem ipsum dolor, sit amet   consectetur adipisicing elit. Nesciunt    earum repudiandae repellat  dolore eos omnis, voluptas, odit    excepturi aspernatur eaeum. Aliquam   fuga in nihmolestiae optio,    quaerat  libero fugit? Lorem ipsum   dolor sit amet consectetur    adipisicing elit. Ipsa     laudantium hic architecto,  placeat eum repudiandae.    Debitis laborum, natus nemo,dolore    obcaecati, verocumque harum ab    voluptatibusnostrum doloribus? Ad,   eos!<p>
+
+                <aside>
+                    <p>Artigo escrito por   Gabriel  Santos</p>
+                </aside>
+
+            </article>
+
+
+        </section>
+   </main>
+   <footer>
+    <p>Desenvolido by M.Snts</p>
+   </footer>
+</body>
+</html>

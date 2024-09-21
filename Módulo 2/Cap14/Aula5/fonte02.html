@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+
+            font-family: 'Work Sans';
+
+            /* Meidas Absolutas----
+
+            cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+            Medidas Relativas -----
+
+            -> em  (Altuma relativa ao M maiúculo);
+            -> ex  (altura x);
+            -> rem (relativo ao root, fonte configurada no body)
+            -> vw  (largura da tela, ou viewport)
+            -> vh  (altura da tela, ou viewport)
+            -> %
+            
+
+            1em = 16px ou 1rem = 16px
+*/
+            font-size: 1rem;
+
+/*          font-weight: normal;
+            lighter / normal / bold / bolder 
+
+            400px = normal
+
+             font-style: italic; põe em itálico 
+
+            text-decoration: underline; sublinha o texto /* 
+
+
+
+        
+    /* Algumas Fontes:
+    
+    - sefi(com sefira)
+    -Helvetica, Arial, sans-serif(sem sefira)
+    -Courier New, monospace
+    -Brush Script MT (cursiva)
+    - Fantasy, Papyrus (Fantasia)
+
+    */
+        }
+
+        h1{
+            font-family: Work Sans;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /*shorthand font
+            
+            font-style -> font-weight -> font-size -> font-family
+            
+            Nessa ordem...........................
+
+            */ 
+
+            font: italic bolder 3em 'Work Sans'
+
+        }
+
+        h2{
+            font: bold 2em 'Work Sans'
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae reiciendis sunt. Neque aliquam quae voluptas sint hic at alias velit corporis, eos est ex vel iure labore officia voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum distinctio cupiditate officia quisquam dolorum illum earum placeat commodi, doloremque alias ipsam repellendus officiis, accusantium hic dolore corrupti nulla, quod libero.</P>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam, eius modi animi suscipit saepe ut itaque quia ratione omnis libero porro eos dolorum facilis reiciendis quasi iste iure odio?</p>
+    <H2>Subtítulo do Exercício</H2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam obcaecati provident illo fugit atque eum perferendis esse corporis labore. Officiis similique nemo rerum nam optio! Officia voluptas blanditiis et consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis eveniet ipsam qui? Quos, iste sint facilis quaerat cupiditate voluptatum qui, cum impedit sunt minus rerum non a nobis vitae.</p>
+</body>
+</html>
