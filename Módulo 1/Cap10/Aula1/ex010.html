@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="externos">repositório publico no Github.</a></p>
+
+<!--A Tag 'a' significa âncora, e direciona para um link indicado no parâmetro 'href', a partir do texto.-->
+
+<!--'target' é um parâmetro que diz se o link abrirá em uma página em branco(por isso 'blank') ou não. -->
+
+<!--'rel' é apenas um indicador de crédito do link. Se o link for para uma página no própio site, usa-se "next", se for para uma parte anterior do site usa-se "prev" se for do autor do site, usa-se "author", e se for externo usa-se "external", como no caso acima.-->
+
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/c/CursoemVídeo" target="_blank" rel="external">canal no Youtube.</a></p>
+
+<h1>Usando links internos</h1>
+<p>Esta é a primeira página do site, se você quiser pode acessar também a minha<a href="pag002.html" rel="next"> segunda página</a></p>
+<p>Ou a minha página de <a href="noticias/pag003.html">Notícias</a></p>
+
+<h1>Links para Download</h1>
+
+<ol>
+    <li><a href="Livro/O palhaco e o psicanalista - Christian Dunker.pdf" download="O palhaco e o psicanalista - Christian Dunker.pdf" type="	application/pdf">Baixar livro em PDF</a></li>
+
+    <li><a href="Livro/O palhaco e o psicanalista - Christian Dunker.zip" download="O palhaco e o psicanalista - Christian Dunker.zip" type="application/zip">Livro Compactado</a></li>
+</ol>
+
+<!--O parâmetro 'download' indica qual arquivo será baixado(nome), o 'type' indica o tipo de arquivo.
+
+Site para conferir os tipos:
+https://www.iana.org/assignments/media-types/media-types.xhtml
+-->
+</body>
+</html>

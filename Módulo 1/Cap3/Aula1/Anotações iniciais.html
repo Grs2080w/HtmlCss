@@ -1,0 +1,60 @@
+Titulos em html são colocados entre <h1> no inicio, ou na ABERTURA DE TAG e </h1> no final ou,
+no FECHAMENTO DE TAG, é chamados de Tag como:
+
+<h1>O Gabriel é legal</h1>, sem espaços.
+----------------------------------------------------------------
+Mesma coisa para os parágrafos, iniciam com <p> e acabam com </p> como:
+
+<p>Exemplo de parágrafo</p>
+----------------------------------------------------------------
+Para imagens se usa <img src=""> como abertura de Tag para imagens, dentro das aspas
+vai o nome da imagem. Logo em seguida vem alt="Exemplo de foto">. Tags de imagem
+não precisam ser fechadas.
+
+Assim, "img src" é um parâmetro para determinar qual a origem do arquivo, colocando
+assim o nome de um arquivo dentro dos parênteses, e "alt=''" também é outro
+parâmetro que determina um texto alternativo caso a imagem não aparecça, esse
+texto alternaivo não vai aparecer em conjunto com a imagem, nem antes, nem 
+depois, apenas se a imagem tiver algum problema e não aparecer.
+
+Então o comando todo fica:
+
+<img src="exemplo.foto" alt="Exemplo de foto">
+----------------------------------------------------------------
+============================================================================================================================
+
+ESTILO EM CSS
+
+h1{
+    font-family:Arial;
+    font-size:20pt;
+    color:blue;
+}
+
+h1 tem o nome de 'Seletor' e é aberto com chaves '{}' 
+Dentro do seletor tem as linhas que são chamadas de 'Declarações'. 
+Cada declaração tem uma 'Propiedade' ou Parâmetro, que é o que vem antes dos ':'
+e um valor, que é o que vem depois dos ':'. Toda declaração termina com ';'. 
+
+
+=============================================================================================================================
+
+
+ESTRUTURA BÁSICA EM HTML 
+
+<!DOCTYPE html> / indica que vamos fazer um site em HTML5. Usado no início.
+
+<html lang="pt-br"> / Indica a abertura de Tag do código html.
+    <head> / Área de configurações do site.
+        <meta charset="UTF-8"> / Importante para o uso de acentos da lingua portuguesa.
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body> / Conteúdo do site.
+        <h1>Olá, mundo!</h1>
+    </body>
+</html> / Indica o fechamento da tag html.
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formtações</title>
+</head>
+<body>
+
+
+    <h1>Outras formatações</h1>
+<hr>
+    <h2>-- Códido-fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScripit</p>
+    <pre>
+        <code>
+Num = int(input('Digiti um número'))
+if num % 2 == 0:
+    print(f'O número {num} é par')
+else:
+    print(f'O número {num} é impar')
+print('FIM DO PROGRAMA')
+        </code>
+    </pre> <!-- 'pre' considera as quebras de linhas, tabulações e etc, diferente da Tag 'code' que coloca tudo em uma linha apenas.-->
+    <p>Nesses textos, é usado a Tag 'code' para mudar o formato das letras para uma em que o espaço de todas as letras são iguais, assim como nos códigos,
+    </p>
+    <br>
+<hr>
+    <h2>-- Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O compultador é um burro muito rápido</q></p>
+    <!--A Tag 'q' torna um texto em citação(coloca aspas)-->
+
+    <h2>-- Citações Completas</h2>
+    <p>Segundo Jennifer Niederst Robbins no seu livro HTML and XHTML Pocket Reference:
+        <blockquote cite="https://www.google.com.br/books/edition/HTML_and_XHTML_Pocket_Reference/zARk6zT0twYC?hl=pt-BR&gbpv=0">
+            <q>After years of using spacer GIFs, layers of nested tables, and other improvised solutions for building your web sites, getting used to the more stringent "standards-compliant" design that is de rigueur among professionals today can be intimidating.</q> <!--O 'q' é opcional.-->
+        </blockquote>
+    <!--'blockquote' é uma citação em que não há aspas, mas o textos tem quebra de linha e é indentado pra direita, assim como uma citação.-->
+
+    <!--O 'cite' depois de 'blockquote' indica de onde veio a citação, ou origem, serve para manter os direitos autorais de quem originou a citação, não muda nada para o usário do site.-->
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando</p> <!--A Tag 'abbr' faz uma abreviação a uma sigla, no caso de html, ao passar o mouse encima, é mostrado o texto 'HyperText Markup Language', mas não cria nenhum link-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <!--Preciso nem dizer oq faz né-->
+
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está funcionando no meu própio servidor</p>
+
+
+     <!--Arquivo .ogv abre apenas no Firefox, 08/09/2024 -->
+    <video width="1000" poster="midia/Tumb.png" controls autoplay loop>
+        <source src="midia/videoex_original.mp4" type="video/mp4">
+        <source src="midia/videoex_webm.webm" type="video/webm">
+        <source src="midia/videoex_mp4.mp4" type="video/mp4">
+        <source src="midia/videoex_ogv.ogv" type="video/ogv">
+        <p>Seu navegador não suporta vídeos</p>
+    </video>
+
+    <h1>Inserindo Vídeos do youtube</h1>
+<!--height="315"-->
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/LW0bhKitRBk?si=0edfRkPYI-5x4bgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    
+    <iframe src="https://player.vimeo.com/video/641712379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1000" height="563" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Yu Su - Melaleuca"></iframe>
+</body>
+</html>
