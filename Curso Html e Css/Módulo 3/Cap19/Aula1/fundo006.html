@@ -3,31 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
+
+
+            /*
+
+            Comandos inutilizados pelo Background - Shorthand mais abaixo.
+            
             background-color: white;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat; -> Inútil na presença do  'background-attachment: fixed;' e do 'background-size: cover;'. 
+
+
+
+                                        ==== Backgroun-repeat =====  
+            
+            Determina se a imagem irá repetir caso ela não seja suficiente. Caso o main tenha width maximo mas tenha um conteudo muito grande, a imagem poderá se repetir ou não, dependendo do comando. O contrário também é válido.
+
+            - repeat-y: Repete a imagem apenas no eixo y
+            - repeat-x: Repete a imagem apenas do eixo x
+            - repeat: Repete as imagens (comando padão)
+            - no-repeat: Não repete a imagem, ao dimiuir o zoom, é mostrado o 'bacjground-color' do site.
+            - space: Repete as imagens mas com um espaço em entre as mesmas.(A cor depende do Background-color)
+            - round: Inútil
+
+
+            ---------------------------------------------------------------------------------------
+
+             background-attachment: fixed; 
             background-size: cover;
 
-            /* 
 
-            backgroun-size comands:
+                                        ===== backgroun-size comands =====
+
+            Determina o tamanho do background.
 
             - Contain: Mantém a largura total da imagem, mas cria barras laterais.
-            - Cover:  Cobre o fundo com a imagem ocupando 100% da vp, adptando ela, mas não mostra a resolução total dependo do tamanho da veewport.
+            - Cover:  Cobre o fundo com a imagem ocupando 100% da vp, adptando ela, mas não  mostra a resolução total dependo do tamanho da veewport.
             - Porcentagem: % de largura e % de altura.
 
-            */
+            ----------------------------------------------------------------------------------------
+
+                                         ===== Background-Attachment =====
+            
+            Determina se o background vai estar vinculado ao conteudo do Maain ou fixo no fundo da vewport.
+
+            - Scroll: Rola o backgroun junto com o Main/Conteúdo
+            - Fixed: Fixa o background, 'desvinculando' do conteúdo.
+
+            Tradução de Attachment :
+                "Anexo, Vinculado"
+
+
+            ----------------------------------------------------------------------------------------
+
+
+            Shorthands - Background
+            color > image > position > repeat > [size] > attachment 
+            
+            Size está entre [] porque na regra da W3C, pode ser colocado no shorthand, mas na prática não funciona ainda (22/09/2024), então deve ser colocado o 'background-size' separadamente.
+            
+            👇🏿 */
+
+            background:  Black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+
+
+
+
+        
 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 1000px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
