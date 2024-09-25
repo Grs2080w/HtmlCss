@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        #Cabeçalho{
+            border: 2px solid gray;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+
+
+        td, th{
+            border: 2px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .posicao {
+            width: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    === ANATOMIA PARA TABELAS GRANDES ===
+
+    TABLE = tabelas
+        THEAD
+            TR,TD,TH
+        TBODY
+            TR,TD,TH
+        TFOOT
+            TR,TD,TH
+
+    -->
+
+    <Table>
+        <thead>
+            <tr id="Cabeçalho">
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+            <tr>
+
+                <th>São Paulo</th>
+                <td>45 973 190	</td>
+            <tr>
+
+                <th>Minas Gerais</th>
+                <td>21 322 692</td>
+            </tr>
+            <tr>
+
+                <th>Rio de Janeiro</th>
+                <td>17 219 679</td>
+            </tr>
+            <tr>
+         
+                <th>Bahia</th>
+                <td>14 850 513</td>
+            </tr>
+
+            <tr>
+
+                <th>Paraná</th>
+                <td>11 824 665</td>
+            </tr>
+
+            <tr>
+    
+                <th>Rio Grande do Sul</th>
+                <td>11 229 915</td>
+            </tr>
+            <tr>
+
+                <th>Pernambuco</th>
+                <td>9 539 029</td>
+            </tr>
+            <tr>
+
+                <th>Ceará</th>
+                <td>9 233 656</td>
+            </tr>
+            <tr>
+
+                <th>Pará</th>
+                <td>8 664 306	</td>
+            </tr>
+            <tr>
+                <th>Santa Catarina</th>
+                <td>8 058 447</td>
+            </tr>
+        </thead>
+
+        
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes:</th>
+                <td>146 686 177</td>
+            </tr>
+        </tfoot>
+    </Table>
+
+
+</body>
+</html>
