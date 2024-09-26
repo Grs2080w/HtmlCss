@@ -5,27 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         table {
             border-collapse: collapse;
-            width: 500px;
+
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        #Cabeçalho{
+        caption {
+            border: 2px solid rgba(128, 128, 128, 0.532);
+            border-collapse: collapse;
+            padding: 10px;
+            font-size: 20px;
+            background-color: rgba(128, 128, 128, 0.532);
+        }
+
+        thead th {
             border: 2px solid gray;
-            padding: 5px;
+            padding: 10px;
             background-color: black;
             color: white;
         }
 
-
-        td, th{
-            border: 2px solid gray;
-            padding: 10px;
-            text-align: center;
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+            color: black;
         }
 
-        .posicao {
-            width: 20px;
+        /* 
+                ===== :nth-child ====== 
+
+        Irá dermarcar as linhas de acordo com o parâmetro dentro do parênteses
+
+        (odd ou  2n-1): Linhas ímpares
+        (2n ou even): A cada 2 linhas
+
+        */
+
+
+        
+        tbody th {
+            border: 2px solid gray
+            ;
+            padding: 10px;
+            width: 200px;
+            text-align: left;
+           
+        }
+
+
+        tbody td {
+            border: 2px solid gray;
+            text-align: center;
+            width: 150px;
+        }
+
+        tfoot th {
+            background-color: black;
+            color: aliceblue;
+            text-align: left;
+            padding: 10px;
+            border: 2px solid gray;
+        }
+
+        tfoot td {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            border: 2px solid gray;
         }
 
 
@@ -37,78 +86,73 @@
     === ANATOMIA PARA TABELAS GRANDES ===
 
     TABLE = tabelas
+        CAPTION = legenda
         THEAD
             TR,TD,TH
         TBODY
             TR,TD,TH
         TFOOT
-            TR,TD,TH
+            TR ,TD,TH
 
     -->
 
     <Table>
-        <thead>
-            <tr id="Cabeçalho">
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-            <tr>
+        <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
 
-                <th>São Paulo</th>
-                <td>45 973 190	</td>
-            <tr>
 
-                <th>Minas Gerais</th>
-                <td>21 322 692</td>
-            </tr>
-            <tr>
-
-                <th>Rio de Janeiro</th>
-                <td>17 219 679</td>
-            </tr>
-            <tr>
-         
-                <th>Bahia</th>
-                <td>14 850 513</td>
-            </tr>
-
-            <tr>
-
-                <th>Paraná</th>
-                <td>11 824 665</td>
-            </tr>
-
-            <tr>
-    
-                <th>Rio Grande do Sul</th>
-                <td>11 229 915</td>
-            </tr>
-            <tr>
-
-                <th>Pernambuco</th>
-                <td>9 539 029</td>
-            </tr>
-            <tr>
-
-                <th>Ceará</th>
-                <td>9 233 656</td>
-            </tr>
-            <tr>
-
-                <th>Pará</th>
-                <td>8 664 306	</td>
-            </tr>
-            <tr>
-                <th>Santa Catarina</th>
-                <td>8 058 447</td>
-            </tr>
-        </thead>
+            <tbody>
+                <tr>
+                    <th>São Paulo</th>
+                    <td>45 973 190	</td>
+                <tr>
+                    <th>Minas Gerais</th>
+                    <td>21 322 692</td>
+                </tr>
+                <tr>
+                    <th>Rio de Janeiro</th>
+                    <td>17 219 679</td>
+                </tr>
+                <tr>
+                    <th>Bahia</th>
+                    <td>14 850 513</td>
+                </tr>
+                <tr>
+                    <th>Paraná</th>
+                    <td>11 824 665</td>
+                </tr>
+                <tr>
+                    <th>Rio Grande do Sul</th>
+                    <td>11 229 915</td>
+                </tr>
+                <tr>
+                    <th>Pernambuco</th>
+                    <td>9 539 029</td>
+                </tr>
+                <tr>
+                    <th>Ceará</th>
+                    <td>9 233 656</td>
+                </tr>
+                <tr>
+                    <th>Pará</th>
+                    <td>8 664 306	</td>
+                </tr>
+                <tr>
+                    <th>Santa Catarina</th>
+                    <td>8 058 447</td>
+                </tr>
+            </tbody>
 
         
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes:</th>
+                <th scope="row">Total de Habitantes:</th>
                 <td>146 686 177</td>
             </tr>
         </tfoot>
