@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bola gradiente</title>
+    <title>Bola Animação</title>
     <style>
         body {
             background-color: black;
         }
         div {
             position: absolute;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0px 0px 100px 20px rgb(255, 0, 170);
+            border: 1px solid rgba(255, 255, 255, 0);
             height: 150px;
             width: 150px;
             border-radius: 200px;
-            left: 45vw;
+            left: 40%;
             top: 30vh;
-            background-image: radial-gradient(white, rgba(255, 0, 170, 0.598));
-            animation-duration: 1s;
-            animation-name: slidien;
+            animation-duration: 2s;
+            animation-name: teste;
             animation-iteration-count:infinite;
 
         }
 
-        @keyframes slidien {
-            from {
-                
+        @keyframes teste {
+            0% {
+                background-image: repeating-radial-gradient(white, rgb(255, 0, 170));
+                box-shadow: 0px 0px 100px 20px rgb(255, 0, 170);
+            }
+            
+            25% {
+                background-image: repeating-radial-gradient(white, rgba(255, 0, 255, 0.602));
+                box-shadow: 0px 0px 100px 20px rgba(255, 0, 255, 0.602);
             }
 
-            to {
+            50% {
+                background-image: repeating-radial-gradient(white, rgba(174, 0, 255, 0.602));
+                box-shadow: 0px 0px 100px 20px rgba(174, 0, 255, 0.602);
+            }
+
+
+            75% {
+                background-image: repeating-radial-gradient(white
+               , rgba(81, 0, 255, 0.788));
+               box-shadow: 0px 0px 100px 20px rgba(81, 0, 255, 0.597); 
+            }
+
+            100% {
     
                height:300px;
-               background-image: radial-gradient(white
-               , rgb(0, 0, 255) 90%);
+               background-image: repeating-radial-gradient(white
+               , rgba(0, 0, 255, 0.847));
                box-shadow: 0px 0px 100px 20px blue;
             }
         }
