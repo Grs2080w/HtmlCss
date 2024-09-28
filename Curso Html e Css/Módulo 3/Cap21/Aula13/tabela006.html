@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            border: 2px solid black;
+        }
+
+        th {
+            padding: 2px;
+            border: 2px solid black;
+        }
+
+        td {
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .cnome {
+            background-color: tomato;
+        }
+
+        .cidade {
+            background-color: greenyellow;
+        }
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>MARIA</td>
+            <td>F</td>
+            <td>21</td>
+            <td>MARCENEIRA</td>
+        </tr>
+
+        <TR>
+            <td>JOÃO</td>
+            <td>M</td>
+            <td>25</td>
+            <td>PORTEIRO</td>
+        </TR>
+
+        <TR>
+            <td>LUCAS</td>
+            <td>M</td>
+            <td>18</td>
+            <td>ESTUDANTE</td>
+        </TR>
+
+        <TR>
+            <td>PEDRO</td>
+            <td>M</td>
+            <td>27</td>
+            <td>DICÍPULO</td>
+        </TR>
+    </table>
+</body>
+</html>

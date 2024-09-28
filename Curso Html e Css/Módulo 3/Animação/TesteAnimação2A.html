@@ -18,32 +18,24 @@
             border: 2px solid rgba(255, 255, 255, 0);
             border-radius: 75px;
 
+            box-shadow: 0px;
+
             width: 150px;
             height: 150px;
 
             background-color: rgb(255, 255, 0);
-
-            box-shadow: 1px 1px 100px 20px yellow;
-
-            animation-name: Bola2;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
         }
 
-        @keyframes Bola2 {
-                0% {
-                box-shadow: 0px;
-                }
+        #bola:hover {
+            box-shadow: 1px 1px 50px 20px yellow;
+            transition-duration: 1s;
+            
+        }
 
-                50% {
-                    box-shadow: 1px 1px 50px 20px;
-                }
-                
-            }
     </style>
 </head>
 <body>
-    <div>
+    <div id="bola">
 
     </div>
 </body>

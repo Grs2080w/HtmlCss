@@ -10,12 +10,16 @@
         }
         div {
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
             border: 1px solid rgba(255, 255, 255, 0);
+            border-radius: 200px;
+
             height: 150px;
             width: 150px;
-            border-radius: 200px;
-            left: 40%;
-            top: 30vh;
+
             animation-duration: 2s;
             animation-name: teste;
             animation-iteration-count:infinite;
@@ -23,6 +27,7 @@
         }
 
         @keyframes teste {
+            
             0% {
                 background-image: repeating-radial-gradient(white, rgb(255, 0, 170));
                 box-shadow: 0px 0px 100px 20px rgb(255, 0, 170);
