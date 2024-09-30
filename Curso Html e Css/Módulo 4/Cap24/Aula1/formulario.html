@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+
+        form {
+            background-color: black;
+            padding: 20px;
+            color: white;
+            min-width: 200px;
+            max-width: 300px;
+        }
+        #inome, #isobrenome {
+            background-color: white;
+            border-radius: 2px;
+            color: black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p><label for="inome">Nome..............</label>
+            <input type="text" name="inome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome......</label> 
+            <input type="text" name="isobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>  <br>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="text" name="ususario" id="iusuario" required minlength="5" size="15" placeholder="Nome do Usuário">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="senha" id="isen" required maxlength="15" minlength="8" placeholder="Senha" autocomplete="current-password"> 
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!--                                     ===== Form Method Post/Get =====
+
+Post -> Mantém mais seguro, mas não totalmente
+Get -> Zero segurança
+
+
+                                        ===== Form autocomplete ON/OFF =====
+
+On -> Deixa ativada a sugerstão de opções anteriores guardadas no cache
+OFF -> Deixa desativada...
+
+                                                ===== Input =====
+
+- Required -> Indica que o campo é obrigatório, mostra um pop-up
+- maxlength -> Indica o máximo de carcteres que podrão ser digitados.
+- minlength -> Indica o mínimo de carcteres que podrão ser digitados.
+- size -> indica quantos carácteres irá aparecer antes do campo quebrar o texto.
+- placeholder -> Aparece dentro da caixa de inout e indica o que é para ser escrito naquele campo. Desaparece depois que alguma letra é digitada.
+
+- autocomplete="current-password" -> Usado em formularios em que o dado já existe. EX:Login / (Valor Semântico)
+- autocomplete="new-password" -> Indica que a senha ainda será criada. EX:Cadastro / (Valor Semântico)
+
+
+                                              ===== input/types =====
+                                              
+Submit -> Envia os dados para algum local cmo arquivo php
+Password -> Usado como senha, tem o objetivo de esconder ou n o que es´ta sendo dogitado, usando pontos como camuflagem.
+Text -> Caixa de texto simples
+Reset -> Limpa todos os dados dentro da tag 'form'.
+
+
+-->
