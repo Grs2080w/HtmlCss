@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="1" >
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do Perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!--
+                            ===== Input fILE =====
+
+Faz o download de um arquivo local.
+Ps: Só pode ser usado com 'Method:POST' pela quantidade de Bytes.
+
+
+
+                            ===== Input Color =====
+
+Coloca uma caixa de texto com a opção de escolher uma cor RGB.
+
+Value - Recebe um código de cor hexadecimal e seta como cor inicial/padrão
+
+
+
+                            ===== Input Range =====
+
+Coloca uma barra azul modificavel.
+
+Max - Seta o valor máximo que a bolinha pode representar. 
+Min - Seta o valor Mínimo que a bolinha pode representar.
+Value - Seta um valor inicial.
+
+-->
