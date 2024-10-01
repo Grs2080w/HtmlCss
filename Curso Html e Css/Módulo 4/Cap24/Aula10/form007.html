@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        textarea {
+            background-color: rgba(181, 82, 82, 0.716);
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            outline-color: rgba(0, 0, 0, 0.464);
+        }
+
+        label {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        #iest, #iprofissão {
+            border-radius: 4px;
+            outline-color: rgba(0, 0, 0, 0.464);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>-----------Escolha---------</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP" >São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Centrooeste">
+                    <option value="GO">Goiás</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="MT">Mato Grosso</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+          
+            </select>
+        </p>
+
+        <label for="iprofissão">Profissão:</label>
+        <input type="text" name="profissão" id="iprofissão" list="LSTPROF">
+        <datalist id="LSTPROF">
+            <option value="Administrador"></option>
+            <option value="Contabilista"></option>
+            <option value="Desenvolvedor"></option>
+            <option value="Professor"></option>
+        </datalist>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>
+
+<!--
+
+                            ===== Select =====
+
+Cria uma caixa de opções fixas.
+
+
+                            ===== Option =====
+
+Cria uma opção para ser usada no select. Deve ser usado dentro.
+
+
+
+                            ===== Optgroup=====
+
+Cria um grupo de opções, com a opção de por título como no exercico, foi usada as regiões.
+
+
+                            ===== Datalist =====
+
+Cria uma caixa e opções dinâmicas, onde é mostrado opções, mas deixa o usuário escolher ou escrever o que quiser.
+
+A sintaxe é:
+
+Primeiro um Input TEXT, em seguida uma tag <datalist> que recebe tags <option> assim como <select>
+
+
+
+                            ===== Textarea =====
+
+Cria uma caixa de texto com maior cpacidade de escrita.
+
+cols - Números de colunas
+rows - Número de linhas
+
+
+
+
+
+
+-->
