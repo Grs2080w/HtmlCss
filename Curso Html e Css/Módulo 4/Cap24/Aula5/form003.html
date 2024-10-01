@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #prafora{
+            margin-left: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+    </p>
+    <p>
+        <label for="imedia">Média:</label>
+        <input type="number" name="Média" id="imedia" required placeholder="0 a 10" autocomplete="cc-number" min="0" max="10" step="0.1" value="5">
+    </p>
+    <p>
+        <label for="imes">Período Letivo:</label>
+        <input type="month" name="mes" id="imes" value="2024-09">
+
+    </p>
+    <p>
+        <label for="idia">Dia da Prova:</label>
+        <input type="date" name="dia" id="idia">
+    </p>
+    <p>
+        <label for="ihora">Hora da Prova:</label>
+        <input type="time" name="hora" id="ihora">
+    </p>
+    <p>
+        As Aulas são Participativas? 
+    </p>
+    <p>
+        <input type="radio" name="opção" id="isim"> Sim  <input type="radio" name="opção" id="inao"> Não 
+    </p>
+    <p>
+        <label for="iemail">Email:</label>
+        <input type="email" name="" id="iemail" placeholder="email_exemplo@outlook.com" size="23">
+    </p>
+    <p>
+        <label for="iarquivo">Cole seu arquivo aqui:</label>
+        <input type="file" name="arquivo" id="iarquivo">
+    </p>
+    <p>
+        <label for="isemana">Semana:</label>
+        <input type="week" name="semana" id="isemana">
+    </p>
+    <p>
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor">
+    </p>
+    <p>
+        <label for="isenha">Crie uma Senha:</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" autocomplete="new-password">
+    </p>
+    <br>
+    <br>
+    <p id="prafora"></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+</body>
+</html>
+
+
+<!--                    ====== Input Number =====
+                
+Step - Indica de quantos em quanto ele irá pular a contagem, nas setas padrões, ou quanto ele vai aceitar no geral
+Max - Indica o valor máximo que pode ser colocado no Input
+Min - Indica o valor Mínimo que pode ser colocado no Input
+
+                        ===== Input Month =====
+
+Coloca Mês e Ano, sem Dia.
+
+
+                        ===== Input Date =====
+
+Coloca Dia, mês e ano.
+
+
+                        ===== Input Time =====
+
+Coloca Hora e Minutos.
+
+
+                        ===== Input Radio =====
+
+Coloca uma opção redonda, que só poder ser marcada uma vez.
+Ps: Coloca o mesmo nome em varios Radios, faz com que eles sejam de um mesmo grupo, fazendo com que só possa ser marcado um deles por vez, idela para formulário literais.
+
+
+                        ===== Input Email =====
+
+Coloca uma caixa para email.
+
+
+                        ===== Input File ===== 
+
+Permite fazer upload de um arquivo.
+Ps: Não aceita PADDING.
+
+
+                        ===== Input WEEK =====
+
+Coloca o número da semana e o ano.
+
+
+
+                        ===== Input Color =====
+
+Coloca uma opção em que se escolhe uma cor RGB.
+
+
+                        ===== Input Password =====
+
+Coloca uma caixa que oculta o caracteres com pontos.
+
+
+                        ===== Input SUBMIT =====
+
+Envia os dados para o Backend.
+
+
+                        ===== Input Reset =====
+
+Limpa os dados do formulário.
+
+-->
+
