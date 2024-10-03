@@ -12,10 +12,14 @@
     <header>
 
         <H1>Meu Site</H1>
+                
+        <menu id="burguer" onclick="clickMenu()">
+            <span class="material-symbols-outlined" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+            </span>
+        </menu>
 
-        <nav>
-        
-            <img src="icons8-cardápio-64.png" alt="menu" id="iconemenu">
+        <nav id="menu1">
             <ul>
                 <li>Home</li>
                 <li>Notícias</li>
@@ -44,6 +48,18 @@
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate magni mollitia iusto rem, explicabo sed qui amet dolore dicta ipsa odit nulla eaque, facere quam voluptatibus sit soluta, aliquam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi sed quas, autem quisquam, perspiciatis ullam error eius magni praesentium sapiente fugit, officia facilis? Sapiente eum quis beatae quaerat nihil?</p>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (menu1.style.display == 'block') {
+                menu1.style.display = 'none'
+            } 
+            
+            else {
+                menu1.style.display = 'block' 
+            }
+        }
+    </script>
 
 </body>
 </html>

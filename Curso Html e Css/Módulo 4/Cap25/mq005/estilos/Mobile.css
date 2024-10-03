@@ -16,11 +16,10 @@
 
     header {
         background-color: rgb(166, 166, 166);
-        text-align: left;
+        text-align: center;
     }
 
     header h1 {
-        text-align: center;
         margin: 0%;
 
         padding-top: 20px;
@@ -33,7 +32,6 @@
     }
 
     li {
-        display: NONE;
         background-color: rgb(84, 84, 84);
         padding: 15px;
         color: white;
@@ -42,24 +40,26 @@
         font-size:20px ;
     }
 
+    li:hover {
+        background-color:white ;
+        color: rgb(84, 84, 84);
+        border-top: 2px solid rgba(0, 0, 0, 0.311);
+    }
+
     a {
         text-decoration: none;
     }
 
-    nav {
+    #burguer {
         background-color: white;
         text-align: center;
+
+        padding: 0%;
+        margin: 0%;
     }
 
-    nav:active {
-        
-        li {
-            display: block;
-        }
-    }
-
-    #iconemenu {
-        transform: scale(0.5);
+    #menu1 {
+        display: none;
     }
 
     main {
