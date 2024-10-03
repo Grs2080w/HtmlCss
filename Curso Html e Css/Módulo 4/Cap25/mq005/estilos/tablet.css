@@ -27,7 +27,7 @@
         padding-bottom: 20px;
     }
 
-    span {
+    #burguer {
         display: none;
     }
 
@@ -54,7 +54,7 @@
         transition-duration: 0.3s;
     }
     
-    nav {
+    #menu1 {
         background-color: white;
         text-align: left;
 
