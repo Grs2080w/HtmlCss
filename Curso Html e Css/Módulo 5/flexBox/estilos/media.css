@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Outras Midias */
+
+@media screen and (min-width:768px){
+    
+    body {
+        background-color: lightgray;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding-top: 8px;
+    
+    }
+
+    header h1 {
+        width: calc(100vw - 630px);
+        min-width: 360px;
+
+        color: white;
+        text-shadow: 2px 2px 0px black;
+
+        text-align: left;
+        margin-left: 20px;
+    }
+
+     #burguer {
+        display: none;
+    }
+
+    main {
+        background-color: white;
+        width: 90vw;
+        max-width: 1000px;
+
+        margin: auto;
+        margin-top: 20px;
+
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+
+}
+
