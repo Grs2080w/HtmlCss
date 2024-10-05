@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Centralizado</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightcoral;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding-top: calc(50vh - 35vh);
+        }
+
+        div {
+            background-color: lightgreen;
+            width: 80vw;
+            height: 75vh;
+
+            min-width: 400px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+
+            border-radius: 20px;
+        }
+
+        section#foto {
+            background-color: lightseagreen;
+            height: 75vh;
+            width: 30vw;
+
+            min-width: 150px;
+            min-height: 180px;
+
+            background: url(pexels-aadil-2884867\ \(1\).jpg) center ;
+            background-size: cover;
+
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        section#login {
+            height: 75vh;
+            width: 60vw;
+
+            min-width: 308px;
+            min-height: 180px;
+
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        #login h1 {
+            font-size: 8vh;
+                  
+        }
+
+        #login p {
+            font-size: 4vh;
+            margin-top: 3vh;
+            margin-bottom: 5vh;
+          
+        }
+
+        #iemail, #isenha {
+            width: 40vw;
+            height: 9vh;
+
+            margin-top: 6px;
+            border-radius: 8px;
+
+            padding: 5px;
+
+            font-size: 30px;
+        }
+
+        #entrar, #senha {
+            width: 40vw;
+            height: 9vh;
+
+            margin-top: 6px;
+            border-radius: 5px;
+
+            font-size: 30px;
+        }
+
+        #entrar {
+            background-color: lightcoral;
+            color: white;
+            border: 1px solid white;
+        }
+
+        #senha {
+            color: lightcoral;
+            border: 1px solid lightcoral;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <section id="login">
+                <h1>Entrar</h1>
+                <p>Bem vindo de Volta! Faça Login para entrar no site.</p>
+                <form action="cadastro.php">
+                    <input type="email" name="email" id="iemail" placeholder="Email" autocomplete="email" required maxlength="30">
+                    <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8">
+
+                    <input id="entrar" type="submit" value="Entrar"> <br>
+                    <input id="senha" type="submit" value="Esqueci a Senha">
+
+                </form>
+            </section>
+            
+            <section id="foto">
+            
+            </section>
+        </div>
+    </main>
+</body>
+</html>
