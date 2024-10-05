@@ -31,6 +31,10 @@
         display: none;
     }
 
+    #menu1 > p {
+        margin: 6px;
+    }
+
     main {
         background-color: white;
         width: 90vw;
