@@ -31,6 +31,10 @@
         display: none;
     }
 
+    #menu1 {
+        display: block;
+    }
+
     #menu1 > p {
         margin: 6px;
     }
