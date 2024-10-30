@@ -8,8 +8,7 @@
 
 Quer ver mais, use o Link abaixo!
 
-      https://grs2080w.github.io/Sites/Site%201/
-
+      https://grs2080w.github.io/HtmlCss/Sites/Site%201/index.html
 Site do Curso em Vídeo: 
 
       https://www.cursoemvideo.com
