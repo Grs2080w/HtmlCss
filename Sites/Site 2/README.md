@@ -8,7 +8,7 @@ Este site do 'Cordel Moderno' de Milton Duarte possui imagens Backgrounds em efe
 
 Quer ver mais de como ficou? Use o link abaixo!
 
-    https://grs2080w.github.io/Sites/Site%202/
+      https://grs2080w.github.io/HtmlCss/Sites/Site%202/index.html
 
  Site criado como exercicío do curso de HTML/CSS Módulo 3 do canal Curso em Vídeo, mais informaçoes em:
  
