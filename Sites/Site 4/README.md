@@ -6,7 +6,7 @@ Página de Login responsiva com o uso de Media Queries.
 
 Para ver mais acessar o link abaixo, experimente testar em dispositivos Diferentes!
 
-    https://grs2080w.github.io/Sites/Site%204/
+      https://grs2080w.github.io/HtmlCss/Sites/Site%204/index.html
 Página feita como exercício do curso de HTML/CSS do Curso em Vídeo, mais informações em:
 
     https://www.cursoemvideo.com
