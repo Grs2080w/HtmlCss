@@ -1,0 +1,59 @@
+@charset "UTF-8" ;
+
+body,  html {
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    min-width: 500px;
+    margin: 0%;
+}
+
+main {
+    text-align: right;
+    position: relative;
+    height: 100vh;
+    width: 99vw;
+    
+}
+
+section#iphone {
+    background-image: url(imagens/frame-iphone.png);
+    height: 630px;
+    width: 310px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#tela {
+    position: relative;
+    top: 80px;
+    left: -20px;
+    height: 473px;
+
+}
+
+#redessoci {
+    text-align: right;
+}
+
+.icons {
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.23);
+}
+
+.icons:hover {
+    border:3px solid rgba(255, 255, 255, 0.651);
+    transform: translate(-3px, -3px);
+    transition: transform 0.2s;
+
+}
+

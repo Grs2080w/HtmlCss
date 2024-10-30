@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        /*Fonte personalizada */
+        @font-face {
+            font-family: droid ;
+            src: url('fontes/IDroid.otf') format('opentype');
+        }
+
+        :root { /* Determina as variaveis globais */
+
+            --cor1: #09FA84;
+            --cor2: #2BCF80;
+            --cor3: #3EA573;
+            --cor4: #318766;
+            --cor5: #00382E;
+            --cor6: #022116;
+
+        }
+
+        /* Body Verde */
+        body {
+            margin: 0px;
+            background-color: var(white
+            );
+    
+    
+        }
+
+        /* Cabeçalho degrade e título com fonte não serifada*/
+        header {
+            background-image: linear-gradient(#09FA84, #00382E);
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0px;
+            text-shadow: 2px 5px 3px  rgba(0, 0, 0, 0.71);
+        }
+
+
+
+        header > h1 {
+            font-family: Oswald;
+            font-weight: bolder;
+        }
+
+        header > p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+
+        #subcab {
+            text-align: center;
+            font-weight: 600;
+        }
+
+
+        nav {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #00382E;
+        }
+
+        nav > a {
+            color:rgb(63, 229, 140);
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition-duration: 0.25s;
+        }
+
+        nav > a:hover {
+            background-color: rgba(63, 229, 140, 0.665);
+            font-weight: bold;
+            color: var(--cor5);
+            text-decoration: none;
+        }
+
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main branco com largura max e sombra */
+        main {
+            background-color: white;
+            max-width: 1100px;
+            margin: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+
+        }
+
+        section > h1 {
+            font-family: droid;
+            margin-left: 20px;
+            color: rgb(0, 83, 0)
+        }
+
+        /* h2 com background-clor degradê */
+        section > h2 {
+            font-family: droid;
+            background-image: linear-gradient(to right, rgba(5, 248, 183, 0.15), rgba(18, 111, 88, 0));
+            margin-left: 20px;
+            padding-left: 20px;
+            color: rgb(0, 100, 98);
+        } 
+
+        /*Arrumar os parágrafos */
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+            margin-right: 40px;
+            margin-left: 40px;
+            margin-bottom: 30px;
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 1.5em; /* Espaçamento entre as linhas */
+        }
+
+        main img {
+            margin-left: 10%;
+            width: 80%;
+        }
+
+        #bugdroid {
+            width: 40%;
+            margin-left: 27%;
+        }
+
+        /* Por backgroun-color verde na caixa video do youtube */
+        div.video {
+            background-color: var(--cor5);
+            padding: 27% 27% 29% 27%;
+            position: relative;
+        }
+        
+        .video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        /* 
+        
+        ---- Position relative: Coloca o bloco dependendo do seu ponto de referência no html, é necessario fazer um padding para q a caixa apareça.
+
+        ---- Position absolute: Coloca o elemento, nesse caso o 'iframe', sempre dentro do seu elemento pai, nesse caso a div/class '.video', independente do tamanho da div('.video').
+
+        OBS: é necessário centralizar o 'iframe' dentro de '.video' usando os comandos top, right, left, bottom, width e height.
+
+        Para o 'iframe' aparecer dentro da div, é necessário que a div seja 'position relative' e o 'iframe' seja 'position absolute'.
+
+        Feito tudo isso, o iframe estará centralizado no centro da tela. 
+
+        */
+
+
+        /*fazer a listas, e mudar o background-color */
+        #titulo_da_ult_caixa {
+            background-color: rgba(22, 183, 89, 0.685);
+            margin: 20px 30px 0px 30px; 
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 1400px;
+            color: white;
+            border-radius: 20px 20px 0px 0px;
+
+        }
+
+        #ultcaixa {
+            background-color: rgba(114, 244, 170, 0.377);
+            margin: 0px 30px 0px 30px;
+            padding: 10px;
+            border-radius: 0px 0px 20px 20px;
+            color: black;
+        }
+
+        #ultcaixa > p, li {
+            font-weight: 550;
+            margin-left: 40px;
+        }
+
+        #ultcaixa > p > a {
+            color: rgb(0, 55, 255);
+            margin: initial;
+        }
+
+        #queraprender  ul {
+            columns: 2; /* Divide a lista em 2 colunas. Precisa ter tds os 'LIs' dentro da UL.*/
+            list-style-type: '✔️ '; /* Coloca o marcador q quiser antes da lista */
+        }
+
+        span {
+            color: rgb(13, 108, 46); 
+            font-weight: bolder;
+        }
+
+        /* Centralizar footer e por verde escuro */
+
+        footer {
+           background-color: rgb(27, 54, 40);
+        }
+
+         footer > p{
+            color: white;
+            right: auto;
+            text-indent: initial;
+            text-align: center;
+            white-space: nowrap;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: initial;
+            
+        }
+
+        footer p > strong {
+            color: #09FA84;
+        }

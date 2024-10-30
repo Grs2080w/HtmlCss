@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*  Paleta de cores:
+    - white
+    - black
+
+*/
+
+
+
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background:linear-gradient(80deg, blue, purple) fixed;
+    background-size: cover;
+
+    
+}
+
+main {
+    background-color: white;
+    
+    height: 700px;
+    width: 70vw;
+    max-width: 375px;
+    min-width: 250px;
+
+    transition-duration: 0.2s;
+
+    margin: auto;
+    margin-top: 10vh;
+    padding: 30px;
+
+    border-radius: 30px;
+}
+
+section > div h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+section > div p {
+    font-size: 25px;
+    
+    
+}
+
+form {
+    text-align: center;
+}
+
+#iemail {
+    height: 60px;
+    width: 65vw;
+    max-width: 363px;
+
+    transition-duration: 0.2s;
+
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#iemail::placeholder {
+    font-size: 25px;
+}
+
+#isenha {
+    height: 60px;
+    width: 65vw;
+    max-width: 363px;
+
+    transition-duration: 0.2s;
+
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+    font-size: 30px;
+}
+
+#isenha::placeholder {
+    font-size: 25px;
+}
+/* #1E63E0 #4552DE
+*/
+
+#entrar {
+    background-color: #0056f5;
+    border-color: #1E63E0;
+    color: white;
+
+    transition-duration: 0.2s;
+
+    height: 60px;
+    width: 68vw;
+    max-width: 376px;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+#entrar:hover {
+    background-color: #184dad;
+    border-color: #184dad;
+    cursor: pointer;
+}
+
+#esuqsen {
+    height: 60px;
+    width: 68vw;
+    max-width: 376px;
+
+    transition-duration: 0.2s;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+
+    background-color: white;
+    color: #184dad;
+    border-color: #184cad99;
+}
+
+#esuqsen:hover {
+    background-color: #3ea2f9;
+    border-color: #3ea2f9;
+    color: white;
+}
+
+

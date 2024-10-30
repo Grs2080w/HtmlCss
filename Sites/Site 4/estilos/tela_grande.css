@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1120px) {
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    html {
+        margin: 0%;
+        padding: 0%;
+
+        height: 100%;
+    }
+
+
+    /* linear-gradient(50deg, pink, yellow) */
+
+    body {
+        background:black linear-gradient(50deg, pink, yellow) fixed center center no-repeat ;
+        background-size: cover;
+
+    }
+    
+    main {
+        background-color: white;
+        
+        transition-duration: 0.7s;
+        transition-timing-function: ease;
+
+        width: 1100px;
+        height: 700px;
+        max-width: 1100px;
+        min-width: 400px;
+    
+        margin: auto;
+        margin-top: 10vh;
+        padding: 0%;
+
+        border-radius: 15px;
+    }
+    
+    section > div h1 {
+        text-align: left;
+        font-size: 80px;
+        margin: 0%;
+    }
+    
+    section > div > p {
+        font-size: 30px;
+        width: 600px;
+        margin-bottom: 40px;
+        
+    }
+
+    #imagem {
+        background: url(../imagens/pexels-aadil-2884867\ \(1\).jpg) center center;
+        background-size: cover;
+
+        float: right;
+
+        width: 450px;
+        height: 700px;
+
+        border-radius: 0% 15px 15px 0%;
+
+        transition-duration: 0.7s;
+    }
+
+    #login {
+        padding: 30px;
+    }
+    
+    form {
+        text-align: left;
+    }
+    
+    #iemail, #isenha {
+
+        height: 70px;
+        width: 550px;
+        max-width: 550px;
+        
+
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    
+        font-size: 30px;
+    }
+    
+    #iemail::placeholder, #isenha::placeholder {
+        font-size: 30px;
+    }
+    
+    /* #1E63E0 #4552DE
+    */
+    
+    #entrar, #esuqsen {
+        background-color: #0056f5;
+        border-color: #1E63E0;
+        color: white;
+    
+        height: 70px;
+        width: 565px;
+        max-width: 650px;
+    
+        border-radius: 10px;
+        margin-bottom: 10px;
+    
+        font-size: 30px;
+    }
+    
+    #esuqsen {
+        background-color: white;
+        color: #184dad;
+        border-color: #184cad99;
+    }
+    
+    #esuqsen:hover {
+        background-color: #3ea2f9;
+        border-color: #3ea2f9;
+        color: white;
+    }
+    
+    #entrar:hover {
+        background-color: #184dad;
+        border-color: #184dad;
+        cursor: pointer;
+    }
+}
